@@ -1,7 +1,8 @@
 # Memory PyMemory Library
 
 This library provides a set of functions for manipulating memory in a Windows process. It allows you to read and write memory, inject DLLs, and search for byte patterns in memory.
-
+## installation
+<pre><code>pip install PyMemoryr</code></pre> 
 ## Functions
 
 ### `process_handle(app_name)`
