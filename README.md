@@ -103,7 +103,7 @@ matches = search_byte_pattern(handle, pattern)
 # Print the results
 print(matches)  # Example output: [{'address': '0x1000000', 'data': '12345678'}, {'address': '0x2000000', 'data': '12345678'}]
 
-```
+
 
 
 
