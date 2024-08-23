@@ -102,13 +102,13 @@ matches = search_byte_pattern(handle, pattern)
 
 # Print the results
 print(matches)  # Example output: [{'address': '0x1000000', 'data': '12345678'}, {'address': '0x2000000', 'data': '12345678'}]
-
+```
 
 
 
 
 ### Requirements
-<h3>Requirements</h3> <p>To use this library, you need the following Python libraries:</p> <ul> <li>pymem</li> <li>pyinjector</li> <li>ctypes (included in the standard library)</li> </ul> <p>You can install the required libraries using pip:</p> <pre><code>pip install pymem pyinjector</code></pre> ```
+<h3>Requirements</h3> <p>To use this library, you need the following Python libraries:</p> <ul> <li>pymem</li> <li>pyinjector</li> <li>ctypes (included in the standard library)</li> </ul> <p>You can install the required libraries using pip:</p> <pre><code>pip install pymem pyinjector</code></pre> 
 <h3>Author</h3>
 <p>Mahdi Hasan Shuvo</p>
 <h3>Contact</h3>
