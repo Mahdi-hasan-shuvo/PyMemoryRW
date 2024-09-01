@@ -1,8 +1,20 @@
-#  PyMemoryRW Library
 
-This library provides a set of functions for manipulating memory in a Windows process. It allows you to read and write memory, inject DLLs, and search for byte patterns in memory.
+
+#### This library provides a set of functions for manipulating memory in a Windows process. It allows you to read and write memory, inject DLLs, and search for byte patterns in memory.
+
+[![Twine Version](https://img.shields.io/pypi/v/twine.svg)](https://pypi.org/project/twine)
+[![Python Versions](https://img.shields.io/pypi/pyversions/twine.svg)](https://pypi.org/project/twine)
+[![Docs Badge](https://img.shields.io/readthedocs/twine)](https://twine.readthedocs.io)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/pypa/twine/main.yml?branch=main)](https://github.com/pypa/twine/actions)
+
+
+
+
+
+
+
 ## installation
-<pre><code>pip install PyMemoryRW</code></pre> 
+<pre><code>pip install PyMemoryR-W</code></pre> 
 ## Functions
 
 ### `process_handle(app_name)`
@@ -128,7 +140,7 @@ print(matches)  # Example output: [{'base_address': '0x1000', 'data': '12 34 78 
 
 
 ### Requirements
-<h3>Requirements</h3> <p>To use this library, you need the following Python libraries:</p> <ul> <li>pymem</li> <li>pyinjector</li> <li>ctypes (included in the standard library)</li> </ul> <p>You can install the required libraries using pip:</p> <pre><code>pip install pymem pyinjector</code></pre> 
+<h3>Requirements</h3> <p>To use this library, you need the following Python libraries:</p> <ul> <li>pymem</li> <li>pyinjector</li> <li>ctypes (included in the standard library)</li> </ul> <p>You can install the required libraries using pip:</p> <pre><code>pip install pymem pyinjector mahdix</code></pre> 
 <h3>Author</h3>
 <p>Mahdi Hasan Shuvo</p>
 <h3>Contact</h3>
@@ -138,4 +150,3 @@ print(matches)  # Example output: [{'base_address': '0x1000', 'data': '12 34 78 
   <li>GitHub: <a href="https://github.com/Mahdi-hasan-shuvo">Mahdi-hasan-shuvo</a></li>
   <li>Facebook: <a href="https://www.facebook.com/ma4D1">Mahdi Hasan Shuvo</a></li>
 </ul>
-
