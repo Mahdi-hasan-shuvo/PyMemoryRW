@@ -1,4 +1,4 @@
-# Memory PyMemoryRW Library
+#  PyMemoryRW Library
 
 This library provides a set of functions for manipulating memory in a Windows process. It allows you to read and write memory, inject DLLs, and search for byte patterns in memory.
 ## installation
@@ -116,13 +116,13 @@ from PyMemoryRW import Scan_pattern
 handle = process_handle("xyz.exe")
 
 # Byte pattern to search for, with '??' as wildcards
-patterns = "12 34 ?? 56"
+patterns = "12 34 ?? 56 ?? 11"
 
 # Search for the byte pattern in the process memory
 matches = Scan_pattern(process_handle, patterns)
 
 # Print the results
-print(matches)  # Example output: [{'base_address': '0x1000', 'data': '12 34 78 56'}, {'base_address': '0x2000', 'data': '12 34 90 56'}]
+print(matches)  # Example output: [{'base_address': '0x1000', 'data': '12 34 78 56 88 11'}, {'base_address': '0x2000', 'data': '12 34 90 56 33 11'}]
 
 ```
 
@@ -133,7 +133,7 @@ print(matches)  # Example output: [{'base_address': '0x1000', 'data': '12 34 78 
 <p>Mahdi Hasan Shuvo</p>
 <h3>Contact</h3>
 <ul>
-  <li>Email: <a href="mailto:shuvo.mex@gmail.com">shuvobbhh@gmail.com</a></li>
+  <li>Email: <a href="mailto:shuvobbhh@gmail.com">shuvobbhh@gmail.com</a></li>
   <li>WhatsApp: <a href="https://wa.me/+8801616397082">+8801616397082</a></li>
   <li>GitHub: <a href="https://github.com/Mahdi-hasan-shuvo">Mahdi-hasan-shuvo</a></li>
   <li>Facebook: <a href="https://www.facebook.com/ma4D1">Mahdi Hasan Shuvo</a></li>
