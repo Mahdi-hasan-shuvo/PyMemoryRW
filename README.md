@@ -105,6 +105,26 @@ print(matches)  # Example output: [{'address': '0x1000000', 'data': '12345678'},
 ```
 
 
+### `Scan_pattern(process_handle, pattern) `
+The Scan_pattern function searches for a given byte pattern in the memory of a specified process. The pattern can include specific bytes and wildcards (??) that match any byte.
+
+**Usage:**
+```python
+from PyMemory import Scan_pattern
+
+# Get a handle for the target process (example handle value)
+handle = process_handle("xyz.exe")
+
+# Byte pattern to search for, with '??' as wildcards
+patterns = "12 34 ?? 56"
+
+# Search for the byte pattern in the process memory
+matches = Scan_pattern(process_handle, patterns)
+
+# Print the results
+print(matches)  # Example output: [{'base_address': '0x1000', 'data': '12 34 78 56'}, {'base_address': '0x2000', 'data': '12 34 90 56'}]
+
+```
 
 
 ### Requirements
