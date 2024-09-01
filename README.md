@@ -1,8 +1,8 @@
-# Memory PyMemory Library
+# Memory PyMemoryRW Library
 
 This library provides a set of functions for manipulating memory in a Windows process. It allows you to read and write memory, inject DLLs, and search for byte patterns in memory.
 ## installation
-<pre><code>pip install PyMemoryr</code></pre> 
+<pre><code>pip install PyMemoryRW</code></pre> 
 ## Functions
 
 ### `process_handle(app_name)`
@@ -11,7 +11,7 @@ Returns a process handle for the given App name.
 
 **Usage:**
 ```python
-from PyMemory import process_handle
+from PyMemoryRW import process_handle
 
 # Get a handle for the Notepad process
 handle = process_handle("notepad.exe")
@@ -23,7 +23,7 @@ Injects a DLL into a running process.
 
 **Usage:**
 ```
-from PyMemory import process_handle, inject_dll
+from PyMemoryRW import process_handle, inject_dll
 
 # Get a handle for the target process
 handle = process_handle("myapp.exe")
@@ -40,7 +40,7 @@ Writes data to a chunk of memory in the process.
 
 **Usage:**
 ```python
-from PyMemory import process_handle, write_memory
+from PyMemoryRW import process_handle, write_memory
 
 # Get a handle for the target process
 handle = process_handle("myapp.exe")
@@ -62,7 +62,7 @@ Reads a valu of memory from the process.
 **Usage:**
 ```python
 
-from PyMemory import process_handle, read_memory
+from PyMemoryRW import process_handle, read_memory
 
 
 # Open the process (replace with your process ID)
@@ -86,7 +86,7 @@ Searches for a byte pattern in the process memory and returns a list of dictiona
 
 **Usage:**
 ```python
-from PyMemory import process_handle, search_byte_pattern
+from PyMemoryRW import process_handle, search_byte_pattern
 
 # Get a handle for the target process
 handle = process_handle("xyz.exe")
@@ -110,7 +110,7 @@ The Scan_pattern function searches for a given byte pattern in the memory of a s
 
 **Usage:**
 ```python
-from PyMemory import Scan_pattern
+from PyMemoryRW import Scan_pattern
 
 # Get a handle for the target process (example handle value)
 handle = process_handle("xyz.exe")
